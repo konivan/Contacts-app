@@ -1,0 +1,66 @@
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  height: 100vh;
+}
+
+.autorization-window {
+  border: 3px solid #2c3034;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 280px;
+  height: 34vh;
+}
+
+.login-input {
+  border: 2px solid #2c3034;
+  background: #f7f7f7;
+  color: rgba(46, 45, 45, 0.5);
+  border-radius: 7px;
+  height: 6%;
+  outline: none;
+}
+
+.password-input {
+  border: 2px solid #2c3034;
+  display: flex;
+  align-items: center;
+  color: rgba(46, 45, 45, 0.6);
+  background: #f7f7f7;
+  border-radius: 7px;
+  margin-top: -70px;
+  height: 6%;
+  outline: none;
+}
+
+.enter-btn {
+  height: 12%;
+  width: 100px;
+  background-color: #218d25;
+  border: none;
+  border-radius: 10px;
+  padding: 3px 5px;
+  color: #f7f7f7;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.enter-link {
+  height: 10%;
+  width: 100px;
+  background-color: #218d25;
+  border: 2px solid #4a2c2e;
+  border-radius: 10px;
+  padding: 4px 3px 0px 3px;
+  color: #f7f7f7;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
