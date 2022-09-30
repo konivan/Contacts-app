@@ -50,7 +50,7 @@ const Main:FC = () => {
           <span>Дата рождения: </span>
           <input value={bdValue} onChange={handleChangeBd}></input>
           <br></br>
-          <span>Пол: </span>
+          <span>Телефон: </span>
           <input value={phoneValue} onChange={handleChangePhone}></input>
           <br></br>
           <span>Должность: </span>

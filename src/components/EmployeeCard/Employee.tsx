@@ -77,6 +77,7 @@ const Employee:FC<Props> = ({item}) => {
             onChange={changePosition}
             placeholder={item.position}></input>) : (<span>{item.position}</span>)}
       </div>
+      <div className='btn-wrapper'>
       <button className="delete-btn" onClick={() => removeHandler(item._id)}>
         Удалить
       </button>
@@ -86,6 +87,7 @@ const Employee:FC<Props> = ({item}) => {
           changeHandler(name, bd, phone, position, item._id)}>
         {changes === false ? "Изменить" : "Готово"}
       </button>
+      </div>
     </div>
   );
 };
