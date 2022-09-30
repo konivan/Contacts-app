@@ -30,6 +30,8 @@ const Authorization:FC = () => {
   return (
     <section className="main-wrapper">
       <div className="autorization-window">
+        <h1 className='authorization-title'>Авторизация</h1>
+        <div className="authorizations-inputs">
         <input
           placeholder="логин"
           onChange={handleChangeLogin}
@@ -42,6 +44,7 @@ const Authorization:FC = () => {
           value={password}
           className="password-input"
         ></input>
+        </div>
         <button onClick={() => authHandler(login, password)} className="enter-btn">Войти</button>
       </div>
     </section>
