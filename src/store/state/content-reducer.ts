@@ -124,10 +124,10 @@ export const contentReducer = (state = initialState, action: TypeActionState) =>
     case actionTypes.STATE_CHANGE_ITEM: {
       const state1 = [...state];
       let { name, id, bd, phone, position} = action.payload;
-      state1[id].name = name;
-      state1[id].birth_date = bd;
-      state1[id].phone = phone;
-      state1[id].position = position;
+      state1.find(item => item._id === id)!.name = name;
+      state1.find(item => item._id === id)!.birth_date = bd;
+      state1.find(item => item._id === id)!.phone = phone;
+      state1.find(item => item._id === id)!.position = position;
       return state1;
     }
     case actionTypes.SEARCH_BY_POSITION_AND_DIVISION: {

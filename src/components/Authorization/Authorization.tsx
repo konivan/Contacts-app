@@ -19,12 +19,12 @@ const Authorization:FC = () => {
     return navigate(auth[2], {replace:true});
   }
 
-  function handleChangeLogin(event: any) {
-    setLogin(event.target.value);
+  function handleChangeLogin(event: React.FormEvent<HTMLInputElement>) {
+    setLogin(event.currentTarget.value);
   }
 
-  function handleChangePassword(event: any) {
-    setPassword(event.target.value);
+  function handleChangePassword(event: React.FormEvent<HTMLInputElement>) {
+    setPassword(event.currentTarget.value);
   }
 
   return (
