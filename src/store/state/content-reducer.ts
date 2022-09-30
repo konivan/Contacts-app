@@ -109,7 +109,7 @@ export const contentReducer = (state = initialState, action: TypeActionState) =>
     }
     case actionTypes.STATE_ADD_ITEM: {
       const state1 = [...state];
-      let { name, bd, phone, position }:any = action.payload;
+      let { name, bd, phone, position } = action.payload;
 
       let newItem = {
         name: name,
@@ -122,12 +122,13 @@ export const contentReducer = (state = initialState, action: TypeActionState) =>
       return state1;
     }
     case actionTypes.STATE_CHANGE_ITEM: {
+      const state1 = [...state];
       let { name, id, bd, phone, position} = action.payload;
-      state[id].name = name;
-      state[id].birth_date = bd;
-      state[id].phone = phone;
-      state[id].position = position;
-      return state;
+      state1[id].name = name;
+      state1[id].birth_date = bd;
+      state1[id].phone = phone;
+      state1[id].position = position;
+      return state1;
     }
     case actionTypes.SEARCH_BY_POSITION_AND_DIVISION: {
       if (action.payload !== '') {

@@ -8,10 +8,6 @@ export enum actionTypes {
   STATE_ADD_ITEM = 'STATE_ADD_ITEM',
 }
 
-interface StateAddItemPayload {
-  id: number,
-}
-
 interface Authorization {
   type: actionTypes.AUTHORIZATION,
   payload: {login: string, password: string}
@@ -24,7 +20,7 @@ interface SearchContent {
 
 interface StateChangeItem {
   type: actionTypes.STATE_CHANGE_ITEM,
-  payload: any,
+  payload: { name: string, bd: string , phone: string, position: string, id: number},
 }
 
 interface StateDeleteItem {
@@ -34,7 +30,7 @@ interface StateDeleteItem {
 
 interface StateAddItem {
   type: actionTypes.STATE_ADD_ITEM,
-  payload: any,
+  payload: {name: string, bd: string, phone: string, position: string}
 }
 
 export type TypeActionState = Authorization | SearchContent | StateChangeItem | StateAddItem | StateDeleteItem;

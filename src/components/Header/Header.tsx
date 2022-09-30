@@ -14,8 +14,8 @@ const Header:FC = () => {
     dispatch(searchItem(value))
   }
 
-  function handleChange(event: any) {
-    setValue(event.target.value);
+  function handleChange(event: React.FormEvent<HTMLInputElement>) {
+    setValue(event.currentTarget.value);
   }
 
   return (

@@ -24,20 +24,20 @@ const Main:FC = () => {
       setpositionValue('');
   }
 
-  function handleChangeName(event: any) {
-    setnameValue(event.target.value);
+  function handleChangeName(event: React.FormEvent<HTMLInputElement>) {
+    setnameValue(event.currentTarget.value);
   }
 
-  function handleChangeBd(event: any) {
-    setbdValue(event.target.value);
+  function handleChangeBd(event: React.FormEvent<HTMLInputElement>) {
+    setbdValue(event.currentTarget.value);
   }
 
-  function handleChangePhone(event: any) {
-    setphoneValue(event.target.value);
+  function handleChangePhone(event: React.FormEvent<HTMLInputElement>) {
+    setphoneValue(event.currentTarget.value);
   }
 
-  function handleChangePosition(event: any) {
-    setpositionValue(event.target.value);
+  function handleChangePosition(event: React.FormEvent<HTMLInputElement>) {
+    setpositionValue(event.currentTarget.value);
   }
 
   return (

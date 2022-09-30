@@ -22,10 +22,6 @@ const Employee:FC<Props> = ({item}) => {
     dispatch(deleteItem(item));
   }
 
-  // const increaseHandler = (position: string, id: number) => {
-  //   dispatch(increaseItem(position, id));
-  // }
-
   const changeHandler = (
     name: string,
     bd: string,
@@ -37,20 +33,20 @@ const Employee:FC<Props> = ({item}) => {
     dispatch(changeItem(name, bd, phone, position, id));
   };
 
-  const changeName = (event: any) => {
-    setName(event.target.value);
+  const changeName = (event: React.FormEvent<HTMLInputElement>) => {
+    setName(event.currentTarget.value);
   }
 
-  const changeBd = (event: any) => {
-    setBd(event.target.value);
+  const changeBd = (event: React.FormEvent<HTMLInputElement>) => {
+    setBd(event.currentTarget.value);
   }
 
-  const changePhone = (event: any) => {
-    setPhone(event.target.value);
+  const changePhone = (event: React.FormEvent<HTMLInputElement>) => {
+    setPhone(event.currentTarget.value);
   }
 
-  const changePosition = (event: any) => {
-    setPosition(event.target.value);
+  const changePosition = (event: React.FormEvent<HTMLInputElement>) => {
+    setPosition(event.currentTarget.value);
   }
 
   return (
@@ -89,12 +85,6 @@ const Employee:FC<Props> = ({item}) => {
         onClick={() =>
           changeHandler(name, bd, phone, position, item._id)}>
         {changes === false ? "Изменить" : "Готово"}
-      </button>
-      <button
-        className="increase-btn"
-        // onClick={() => increaseHandler(item.position, item._id)}
-      >
-        Повысить
       </button>
     </div>
   );
