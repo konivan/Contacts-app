@@ -7,13 +7,17 @@
 Запускает приложение в режиме разработчика.\
 Открыть [http://localhost:3000](http://localhost:3000) чтобы просмотреть в браузере.
 
+### Авторизация
+ Пароль: password
+ Логин: admin
+
 ## Работающий проект(на всякий случай):
-# https://staff-app.vercel.app/
+# https://contacts-app-inky-nine.vercel.app/
 
 
 ![first picture](./src/assets/preview.png)
 
-P.S(Новые сотрудники появляютя в низу)
+P.S(Новые контакты появляютя снизу)
 
 ### `npm test`
 
